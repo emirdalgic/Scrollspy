@@ -41,7 +41,7 @@ function App() {
             <div
             key = {section.id}
             id = {section.id}
-            red = {(el)=>(sectionRefs.current([section.id] = el))}
+            ref={(el) => (sectionRefs.current[section.id] = el)}
             className= {`min-h-screen min-w-screen ${section.bg} flex items-center justify-center`} 
             >
               <Section content = {section.title} />
